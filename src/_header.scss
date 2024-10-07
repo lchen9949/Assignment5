@@ -1,0 +1,69 @@
+main {
+    & header {
+        width:inherit;
+        clear:both;
+        text-align:center;
+        padding-top:40px;
+    }
+
+    & header h1 {
+        color: $orange;
+        font-weight: 60;
+        font-size: 4em;
+        line-height: 0;
+        @include holdblocks(768px, 959px) {
+            font-size:3em;
+        }
+        @include holdblocks(460px, 767px) {
+            font-size:2em;
+        }
+    }
+
+    & header h1:first-child {
+        @include holdblocks(300px, 459px) {
+            font-size:1.4em;
+            margin-bottom:20px;
+        }  
+    }
+
+    & header h2 {
+        color: $white;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 70px;
+        line-height: 0;
+        @include holdblocks(768px, 959px) {
+            font-size:1.5em;
+        }
+        @include holdblocks(460px, 767px) {
+            font-size:1em;
+        }
+        @include holdblocks(300px, 459px) {
+            color:#FFF;
+            font-size:1em;
+        }
+    }
+
+
+    & header h3 {
+        color: #666;
+        font-size: 2em;
+        font-weight: 300;
+        line-height: 0;
+        margin-bottom:50px;
+        @include holdblocks(460px, 767px) {
+            font-size:1.5em;
+        }
+    }
+
+    & header img {
+        max-width:100%;
+        height:auto;
+        @include holdblocks(460px, 767px) {
+            margin-bottom:100px;
+        }
+        @include holdblocks(300px, 459px) {
+            margin-bottom:80px;
+        }
+    }
+}

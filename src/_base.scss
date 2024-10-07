@@ -1,0 +1,30 @@
+body {
+    font-family: $font-body, sans-serif;
+    font-size:1em;
+    line-height:2em;
+    font-size:1em;
+    line-height:2em;
+    background:url('../images/bg.gif') #FFF repeat-x;
+    margin:0;
+}
+
+main {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+    @include holdblocks(768px, 959px) {
+        width:768 px;
+        margin:0 auto;
+        padding:0 10px;
+    }
+    @include holdblocks(460px, 767px) {
+        width:460 px;
+        margin:0 auto;
+        padding:0 10px;
+    }
+    @include holdblocks(300px, 459px) {
+        width:300 px;
+        margin:0 auto;
+        padding:0 10px;
+    }
+}

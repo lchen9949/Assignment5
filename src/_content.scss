@@ -1,0 +1,140 @@
+main {
+    & header p {
+        width: inherit;
+        margin:0px auto;
+        padding:0 10px;
+    }
+    @include holdblocks(768px, 959px) {
+        width:inherit;
+        margin:0px auto;
+        padding:0 10px;
+    }
+    @include holdblocks(460px, 767px) {
+        width:inherit;
+        margin:0px auto;
+        padding:0 10px;
+    }
+    @include holdblocks(300px, 459px) {
+        width:inherit;
+        margin:0px auto;
+        padding:0 10px;
+    }
+}
+
+#headline {
+    width: inherit;
+    text-align: center;
+    background-color: $red;
+    height: 130px;
+    margin:0 auto;
+    @include holdblocks(768px, 959px) {
+        width:inherit;
+        margin:0px auto;
+    }
+    @include holdblocks(460px, 767px) {
+        width:inherit;
+        margin:0px auto;
+    }
+    @include holdblocks(300px, 459px) {
+        width:inherit;
+        margin:0px auto;
+    }
+    h1 {
+        color: white;
+        padding-top: 50px;
+        font-weight: 80;
+        font-size: 2.5em;
+        @include holdblocks(460px, 767px) {
+            width: inherit;
+            font-size:2em;
+            padding-top:50px;
+        }
+        @include holdblocks(300px, 459px) {
+            width: inherit;
+            font-size:1.5em;
+            padding-top:30px;
+        }
+    }
+    
+}
+
+#content {
+    width: 940px;
+    margin:20px auto;;
+    @include holdblocks(768px, 959px) {
+        width:inherit;
+    }
+    @include holdblocks(460px, 767px) {
+        width:inherit;
+    }
+    @include holdblocks(300px, 459px) {
+        width:inherit;
+        @include clearfix;
+    }
+
+    #products {
+        width: 460px;
+        float: left;
+        @include holdblocks(768px, 959px) {
+            width:46%;
+            margin:0 2%;
+        }
+        @include holdblocks(460px, 767px) {
+            width:96%;
+            margin:0 2%;
+            float:none;
+        }
+        @include holdblocks(300px, 459px) {
+            width:96%;
+            font-size:1.6em;
+            float:none;
+        }
+    }
+
+    #testimonials {
+        width: 460px;
+        float: right;
+        @include holdblocks(768px, 959px) {
+            width:46%;
+            margin:0 2%;
+        }
+        @include holdblocks(460px, 767px) {
+            width:96%;
+            margin:0 2%;
+            float:none;
+        }
+        @include holdblocks(300px, 459px) {
+            width:96%;
+            margin:0 2%;
+            float:none;
+        }
+    }
+
+    img {
+        float: left;
+        margin-right:20px;
+    }
+
+    h3 {
+        color:#666;
+        font-size: 2em;
+        font-weight: 400;
+        @include holdblocks(300px, 459px) {
+            text-align: left;
+            font-size:1.6em;
+            margin-left: 20px;
+            padding-left:0px;
+        }
+    }
+
+    h4 {
+        line-height:1em;
+    }
+
+    article {
+        margin-bottom:40px;
+        @include clearfix;
+    }
+
+}
+

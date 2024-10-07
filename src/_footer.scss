@@ -1,0 +1,35 @@
+.greybar {
+    width:100%;
+    height:90px;
+    background:#F5F6F6;
+    clear:both;
+    padding-top:30px;
+    @include holdblocks(300px, 459px) {
+        display:none;
+    }
+}
+
+footer {
+    width:100%;
+    height:120px;
+    background:#30353D;
+    text-align:center;
+    color:#FFF;
+    padding-top:50px;
+    @include holdblocks(300px, 459px) {
+        text-align:center;
+    }
+    .social-media {
+        margin:0 auto;
+        width:165px;
+        background:url('../images/social-media.png');
+        background-repeat: no-repeat;
+
+        & a {
+            display:block;
+            width:36px;
+            height:36px;
+            text-indent:-9999px;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+
+@mixin backImage ($image, $height: 100vh) {
+    background: url($image);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: $height;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content:'';
+        display:table;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
+@mixin hold($length) {
+    @media (min-width: $length){
+        @content;
+    }
+}
+
+@mixin holdblocks($args...) {
+    @if length($args) == 1 {
+        @media (min-width: nth($args, 1)) {
+            @content;
+        }
+    }
+    @if length($args) == 2 {
+        @media (min-width: nth($args,1)) and 
+               (max-width: nth($args, 2)) {
+                @content;
+               }
+    }
+}
